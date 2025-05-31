@@ -40,10 +40,10 @@ cypress/
 │   ├── Frontend-UI-Tests/
 │   │   ├── accessibility/
 │   │   │   └── accessibilityTest.cy.js
-│   │   ├── auth/
+│   │   ├── useMgt/
 │   │   │   ├── login.test.cy.js
 │   │   │   └── registration.test.cy.js
-│   │   └── shifts/
+│   │   └── shiftsManager/
 │   │       └── shift-management.test.cy.js
 │   ├── fixtures/
 │   │   └── loginUsers.json
