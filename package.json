@@ -1,0 +1,38 @@
+{
+  "name": "qa-automation-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open --env ENV=qa",
+    "cypress:run": "npx cypress run --env ENV=qa,allure=true",
+    "cypress:report": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
+    "cypress:test:allure": "npm run cypress:run && npm run cypress:report",
+    "cypress:run:chrome": "npx cypress run --browser chrome --env ENV=qa,allure=true",
+    "cypress:run:edge": "npx cypress run --browser edge --env ENV=qa,allure=true",
+    "cypress:run:firefox": "npx cypress run --browser firefox --env ENV=qa,allure=true",
+    "cypress:test:chrome": "npm run cypress:run:chrome && npm run cypress:report",
+    "cypress:test:edge": "npm run cypress:run:edge && npm run cypress:report",
+    "cypress:test:firefox": "npm run cypress:run:firefox && npm run cypress:report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akan-baba/QA-Automation-Technical-Test.git"
+  },
+  "keywords": [],
+  "author": "Akan Antia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akan-baba/QA-Automation-Technical-Test/issues"
+  },
+  "homepage": "https://github.com/akan-baba/QA-Automation-Technical-Test#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.0",
+    "axe-core": "^4.10.3",
+    "cypress": "^14.4.0",
+    "cypress-axe": "^1.6.0",
+    "cypress-plugin-api": "^2.11.2"
+  }
+}
