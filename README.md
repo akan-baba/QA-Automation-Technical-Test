@@ -58,8 +58,6 @@ cypress/
 │           └── environs.js
 ```
 
----
-
 ## 🚀 How to Run Tests
 
 ### 1. Install Dependencies
@@ -67,19 +65,16 @@ cypress/
 ```bash
 npm install
 ```
-
 ### 2. Run All Tests with Allure Reporting
 
 ```bash
 npm run cypress:test:allure
 ```
-
 ### 3. View Allure Report
 
 ```bash
 npm run cypress:report
 ```
-
 ### 4. Cross-Browser Testing
 
 ```bash
@@ -97,14 +92,6 @@ npm run cypress:test:firefox
 
 ---
 
-## 🔍 (Optional) View Live Allure Report
-
-If published via GitHub Pages:
-
-[View Live Report](https://akan-baba.github.io/QA-Automation-Technical-Test/)
-
----
-
 ## 🧪 Tools & Libraries
 
 - [Cypress](https://www.cypress.io/)
@@ -116,6 +103,6 @@ If published via GitHub Pages:
 
 ## 👤 Author
 
-Akano Baba  
-📧 [YourEmail@example.com]  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile)
+Akan Antia  
+📧 [akan_antia@live.co.uk]  
+🔗 
