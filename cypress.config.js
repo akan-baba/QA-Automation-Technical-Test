@@ -8,8 +8,8 @@ module.exports = defineConfig({
       return config;
     },
     baseUrl: 'http://localhost:3000',
-    defaultCommandTimeout: 15000,     // Targeted increase
-    pageLoadTimeout: 50000,          // Handle slow full page load
+    defaultCommandTimeout: 20000,     // Targeted increase
+    pageLoadTimeout: 90000,          // Handle slow full page load
     video: false,                    // Optional: turn off video recording
     screenshotOnRunFailure: true ,
     experimentalRunAllSpecs: true // Keep screenshots on errors

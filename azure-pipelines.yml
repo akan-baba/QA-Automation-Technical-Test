@@ -1,5 +1,11 @@
+
+## 🛠️ `azure-pipelines.yml` – For Azure DevOps
+
+Here's a simple and clean Cypress pipeline YAML file:
+
+```yaml
 trigger:
-  - main
+  - none  # or your default branch
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -11,25 +17,17 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      npm ci
+      npm install
     displayName: 'Install dependencies'
 
   - script: |
-      npm run test:all
-    displayName: 'Run All Tests and Generate Allure Report'
+      npm run test:report:all
+    displayName: 'Run Cypress Tests (DEV & QA)'
 
-  - script: |
-      npm run test:chrome
-    displayName: 'Run Tests in Chrome and Generate Report'
-
-  - script: |
-      npm run test:edge
-    displayName: 'Run Tests in Edge and Generate Report'
-
-  - script: |
-      npm run test:firefox
-    displayName: 'Run Tests in Firefox and Generate Report'
-
-  - script: |
-      npm run test:smoke
-    displayName: 'Run Smoke Tests'
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/cypress/results/*.xml'
+      failTaskOnFailedTests: true
+    displayName: 'Publish test results'

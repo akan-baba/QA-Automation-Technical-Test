@@ -14,8 +14,8 @@ This project is a full-stack test automation suite for a sample web application 
 ## ✅ All Tests Passed
 
 This project uses Cypress with Allure Reporting to validate both frontend and backend functionality.
-
-![Allure Report - 100% Passed](./assets/allure-report-summary.png)
+SEE🧪
+![Full Allure Report - 100% Passed]( ./assets/allure-report-summary.png)
 
 - **Total Tests:** 24  
 - **Passed:** 24  
@@ -90,7 +90,7 @@ npm run cypress:test:firefox
 ```
 ## CI/CD
 
-Included: `.github/workflows/cypress.yml` for GitHub Actions or `azure-pipelines.yml` for Azure DevOps.
+Included: `azure-pipelines.yml` for Azure DevOps.
 ---
 
 ## 📊 Coverage Report (Static Badge)
@@ -100,24 +100,17 @@ Included: `.github/workflows/cypress.yml` for GitHub Actions or `azure-pipelines
 
 ---
 
-## 🔍 (Optional) View Live Allure Report
-
-If published via GitHub Pages:
-
-[View Live Report](https://akan-baba.github.io/QA-Automation-Technical-Test/)
-
----
-
 ## 🧪 Tools & Libraries
 
 - [Cypress](https://www.cypress.io/)
 - [Allure Reports](https://docs.qameta.io/allure/)
 - [Axe-Core Accessibility](https://github.com/dequelabs/axe-core)
-- [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events)
+-
 
----
+## 🔗 Repository Link
+
+GitHub Repo: [https://github.com/akan-baba/QA-Automation-Technical-Test](https://github.com/akan-baba/QA-Automation-Technical-Test)
 
 ## 👤 Author
-
-Akano Antia 
-📧 [akan_antia@live.co.uk]  
+**Akan Antia**  
+📧 [akan_antia@live.co.uk](mailto:akan_antia@live.co.uk) 

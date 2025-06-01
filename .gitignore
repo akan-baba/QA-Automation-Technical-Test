@@ -3,3 +3,4 @@ screenshots
 allure-report
 allure-results
 coverage
+.nyc_output
