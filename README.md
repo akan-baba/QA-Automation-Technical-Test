@@ -1,9 +1,10 @@
 # QA Automation Technical Test
 
-This project is a full-stack test automation suite for a sample web application using Cypress. It includes:
+This project is a full-stack test automation suite for a sample web application using Cypress framework. It includes:
 
 - ✅ Frontend UI tests (Login, Registration, Accessibility)
 - ✅ Backend API tests (User and Shift management)
+- ✅ Accessibility Testing
 - ✅ Allure reporting
 - ✅ Cross-browser execution (Chrome, Edge, Firefox)
 - ✅ Page Object Model (POM) structure
@@ -87,7 +88,9 @@ npm run cypress:test:chrome
 npm run cypress:test:edge
 npm run cypress:test:firefox
 ```
+## CI/CD
 
+Included: `.github/workflows/cypress.yml` for GitHub Actions or `azure-pipelines.yml` for Azure DevOps.
 ---
 
 ## 📊 Coverage Report (Static Badge)

@@ -10,6 +10,7 @@ require('@shelex/cypress-allure-plugin');
 
 import 'cypress-axe'
 
+import '@cypress/code-coverage/support'
 
 // Hide fetch/XHR requests
 const app = window.top;

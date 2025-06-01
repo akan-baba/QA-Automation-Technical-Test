@@ -3,11 +3,12 @@ const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
+      require('@cypress/code-coverage/task')(on, config)
       allureWriter(on, config);
       return config;
     },
     baseUrl: 'http://localhost:3000',
-    defaultCommandTimeout: 12000,     // Targeted increase
+    defaultCommandTimeout: 15000,     // Targeted increase
     pageLoadTimeout: 50000,          // Handle slow full page load
     video: false,                    // Optional: turn off video recording
     screenshotOnRunFailure: true ,
