@@ -2,11 +2,22 @@
 
 This project is a full-stack test automation suite for a sample web application using Cypress. It includes:
 
-- ✅ Frontend UI tests (Login, Registration, Accessibility)
-- ✅ Backend API tests (User and Shift management)
-- ✅ Allure reporting
-- ✅ Cross-browser execution (Chrome, Edge, Firefox)
-- ✅ Page Object Model (POM) structure
+- Frontend UI tests (Login, Registration, Accessibility)
+- Backend API tests (User and Shift management)
+- Allure reporting
+- Cross-browser execution (Chrome, Edge, Firefox)
+- Page Object Model (POM) structure
+
+### 🧪 Accessibility Testing (Axe-core with Cypress)
+
+Accessibility testing is implemented using Cypress and the axe-core plugin.
+
+- The test scans the **registration form** for violations using `cy.injectAxe()` and `cy.checkA11y()`.
+- It currently targets only **'critical' impact issues** to ensure fast, focused feedback during CI runs.
+- This includes blockers such as missing labels, invalid ARIA roles, or elements with no accessible name.
+- In a production environment, the scope would be expanded to include `'serious'` and `'moderate'` impacts.
+- Doing so would surface additional WCAG violations like **poor colour contrast**, **tab order issues**, and **missing semantic HTML structure**.
+- This approach balances test coverage with pipeline performance, avoiding unnecessary noise from low-impact findings.
 
 ---
 
