@@ -1,10 +1,9 @@
 # QA Automation Technical Test
 
-This project is a full-stack test automation suite for a sample web application using Cypress framework. It includes:
+This project is a full-stack test automation suite for a sample web application using Cypress. It includes:
 
 - ✅ Frontend UI tests (Login, Registration, Accessibility)
 - ✅ Backend API tests (User and Shift management)
-- ✅ Accessibility Testing
 - ✅ Allure reporting
 - ✅ Cross-browser execution (Chrome, Edge, Firefox)
 - ✅ Page Object Model (POM) structure
@@ -15,8 +14,7 @@ This project is a full-stack test automation suite for a sample web application 
 
 This project uses Cypress with Allure Reporting to validate both frontend and backend functionality.
 
-[![Full Allure Report - 100% Passed](./assets/allure-report-summary.png)](./assets/allure-report-summary.png)
-
+![Allure Report - 100% Passed](./assets/allure-report-summary.png)
 
 - **Total Tests:** 24  
 - **Passed:** 24  
@@ -42,10 +40,10 @@ cypress/
 │   ├── Frontend-UI-Tests/
 │   │   ├── accessibility/
 │   │   │   └── accessibilityTest.cy.js
-│   │   ├── useMgt/
+│   │   ├── auth/
 │   │   │   ├── login.test.cy.js
 │   │   │   └── registration.test.cy.js
-│   │   └── shiftsManager/
+│   │   └── shifts/
 │   │       └── shift-management.test.cy.js
 │   ├── fixtures/
 │   │   └── loginUsers.json
@@ -89,9 +87,7 @@ npm run cypress:test:chrome
 npm run cypress:test:edge
 npm run cypress:test:firefox
 ```
-## CI/CD
 
-Included: `azure-pipelines.yml` for Azure DevOps.
 ---
 
 ## 📊 Coverage Report (Static Badge)
@@ -101,17 +97,25 @@ Included: `azure-pipelines.yml` for Azure DevOps.
 
 ---
 
+## 🔍 (Optional) View Live Allure Report
+
+If published via GitHub Pages:
+
+[View Live Report](https://akan-baba.github.io/QA-Automation-Technical-Test/)
+
+---
+
 ## 🧪 Tools & Libraries
 
 - [Cypress](https://www.cypress.io/)
 - [Allure Reports](https://docs.qameta.io/allure/)
 - [Axe-Core Accessibility](https://github.com/dequelabs/axe-core)
--
+- [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events)
 
-## 🔗 Repository Link
-
-GitHub Repo: [https://github.com/akan-baba/QA-Automation-Technical-Test](https://github.com/akan-baba/QA-Automation-Technical-Test)
+---
 
 ## 👤 Author
-**Akan Antia**  
-📧 [akan_antia@live.co.uk](mailto:akan_antia@live.co.uk) 
+
+Akano Baba  
+📧 [YourEmail@example.com]  
+🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile)
