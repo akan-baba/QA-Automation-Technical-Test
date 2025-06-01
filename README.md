@@ -15,7 +15,7 @@ This project is a full-stack test automation suite for a sample web application 
 
 This project uses Cypress with Allure Reporting to validate both frontend and backend functionality.
 SEE🧪
-![Full Allure Report - 100% Passed]( ./assets/allure-report-summary.png)
+![Full Allure Report - 100% Passed]( ./assets/allure-report-summary-2.png)
 
 - **Total Tests:** 24  
 - **Passed:** 24  
